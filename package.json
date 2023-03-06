@@ -1,0 +1,16 @@
+{
+  "name": "bakend-template",
+  "version": "1.0.0",
+  "description": "This is a template app using mongoose jwt authentication",
+  "main": "server.js",
+  "author": "musiur alam opu",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon run server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "nodemon": "^2.0.21"
+  }
+}
