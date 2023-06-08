@@ -54,6 +54,49 @@ module.exports = ServerConfig
 
 We may have whatever `port` we want and also the `secret` for `encrypting` and `decrypting` JWT for authentication.
 
+Again, we have to make change in another folder `middlewares`. Here in this folder we have `mail.middlewares.js`. Inside this file we have:
+
+```JS
+const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "musiur.dev@gmail.com",
+      pass: "chheaugdfnutemjz",
+    },
+  })
+
+  const mailOptions = {
+    from: "musiur.dev@gmail.com",
+    to: toSend,
+    subject,
+    text: `Click to the click to verify your account: ${link}`,
+  }
+
+```
+
+We need to make changes with our own credentials of nodemailer here:
+
+```JS
+auth: {
+      user: "musiur.dev@gmail.com",
+      pass: "chheaugdfnutemjz",
+    },
+```
+
+And also we need make changes here in this part:
+
+```JS
+const mailOptions = {
+    from: "musiur.dev@gmail.com",
+    to: toSend,
+    subject,
+    text: `Click to the click to verify your account: ${link}`,
+  }
+
+```
+
+In `mailOptions` object we are going to deal with keys - _from and text_.
+
 Now, we are ready to install all the packages.
 
 Use your favorite package manager to install all of them.
