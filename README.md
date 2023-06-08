@@ -12,6 +12,12 @@ a=authentication
 
 <br/>
 
+# ☑️ **Installation**
+
+```
+git clone https://github.com/musiur/mmeja-backend-tamplate.git
+```
+
 # 🤿 **Let's dive into deep**
 
 ### 🏃‍♂️ **Getting Start:**
