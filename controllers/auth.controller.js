@@ -73,9 +73,7 @@ exports.signup = async (req, res) => {
       expiresIn: "1h",
     })
 
-    const verification_link = `${
-      host.includes("localhost") ? "http" : "https"
-    }://${host}/verify?email=${email}&token=${token}`
+    const verification_link = `${host}/auth/verify?email=${email}&token=${token}`
 
     Mail(email, "Verify your account.", verification_link)
     // Return success response with token
