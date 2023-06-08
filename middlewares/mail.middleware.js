@@ -18,13 +18,11 @@ const Mail = (toSend, subject, link) => {
 
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
-      console.log(error)
       return {
         message: "Mail not sent!",
         error,
       }
     } else {
-      console.log("Mail sent successfully!")
       return {
         message: "Mail sent successfully!",
       }
