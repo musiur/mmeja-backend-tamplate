@@ -6,7 +6,8 @@
   "author": "musiur alam opu",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon run server.js",
+    "start": "node run server.js",
+    "dev": "nodemon run server.js",
     "format": "prettier --write \"**/*.js\""
   },
   "dependencies": {
