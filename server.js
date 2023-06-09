@@ -19,7 +19,7 @@ const app = express()
 const port = ServerConfig.port
 
 // cross origin issue
-const allowedOrigins = ["http://example1.com", "http://example2.com", "http://localhost:3000"]
+const allowedOrigins = ["http://example1.com", "http://example2.com", "http://localhost:3000", "https://next-base-template.vercel.app/"]
 
 app.use(
   cors({
