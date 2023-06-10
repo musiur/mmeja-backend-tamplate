@@ -22,8 +22,28 @@ git clone https://github.com/musiur/mmeja-backend-tamplate.git
 
 ### 🏃‍♂️ **Getting Start:**
 
-We need to make changes in files in the `configs` folder in root directory of out project.
+First of all let's make changes in `server.js`. There will find a part of code where a const array created name `allowedOrigins`.
 
+```JS
+// cross origin issue
+const allowedOrigins = ["http://example1.com", "http://example2.com", "http://localhost:3000", "https://next-base-template.vercel.app"]
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+  })
+)
+```
+
+Whatever url client we will have for our project we have to add here in this array `allowedOrigins`.
+For example: Our client site link is: _https://musiur.vercle.app_. So we will have new item in the array.
+
+```
+// cross origin issue
+const allowedOrigins = ["http://example1.com", "http://example2.com", "http://localhost:3000", "https://next-base-template.vercel.app", "https://musiur.vercel.app"]
+```
+
+Then, we need to make changes in files in the `configs` folder in root directory of out project.
 We have two javascript files inside our `configs` folder
 
 - database.config.js
