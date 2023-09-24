@@ -53,7 +53,7 @@ Inside our `database.config.js` file by default we have set this code:
 
 ```JS
 const DatabaseConfig = {
-    uri:`mongodb+srv://opu:opu@cluster0.bui2xrz.mongodb.net/template?retryWrites=true&w=majority`,
+    uri:`MONGODB_DATABASE_URI`,
 }
 
 module.exports = DatabaseConfig
