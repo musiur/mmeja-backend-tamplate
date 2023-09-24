@@ -98,8 +98,8 @@ We need to make changes with our own credentials of nodemailer here:
 
 ```JS
 auth: {
-      user: "musiur.dev@gmail.com",
-      pass: "chheaugdfnutemjz",
+      user: "YOUR EMAIL",
+      pass: "YOUR PASS",
     },
 ```
 
