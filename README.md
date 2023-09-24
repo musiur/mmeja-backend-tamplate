@@ -80,8 +80,8 @@ Again, we have to make change in another folder `middlewares`. Here in this fold
 const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "musiur.dev@gmail.com",
-      pass: "chheaugdfnutemjz",
+      user: "YOUR EMAIL",
+      pass: "YOUR PASS",
     },
   })
 
